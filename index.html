@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Tracker</title>
+    <link rel="stylesheet" href="/flight_tracker/style.css">
+</head>
+<body>
+    <nav>
+    <div class="logo">FlightMatrix
+    <span><img src="/images/plane.png" alt="plane" width="30px" height="30px"></span>
+    </div>
+    </nav>
+    <div class="text">
+        <h1>Track any flight,
+        <br>
+        <span>anywhere.</span>
+        </h1>
+    </div>
+        <div class="small-text">
+        <p>Real-time status, delay info, and route data-all in one place </p>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+    <div class="search-box">
+        <h2>Search By Flight Number</h2>
+        <div class="row">
+        <input type="text" id="flight-input" placeholder="e.g. AI302, 6E441">
+        <button type="button" id="search-btn"  class="row-button">Search</button>
+        </div>
+    </div>
+    <div class="search-box">
+        <h2>Search By Route</h2>
+        <div class="row">
+            <input type="text" id="input-from" placeholder="From (e.g. DEL)" maxlength="3">
+            <input type="text" id="input-to" placeholder="To (e.g. BOM)" maxlength="3">
+        <button type="button" id="search" class="row-button">Search</button>
+    </div>
+    </div>
+    <div id="results"></div>
+    </div>
+    <script src="/flight_tracker/script.js"></script>
+
+</body>
+</html>
